@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Spårare för Matvarors Utgångsdatum", "tagline": "Slösa aldrig mat igen"},
+  "common": {"save": "Spara", "cancel": "Avbryt", "delete": "Ta bort", "edit": "Redigera", "add": "Lägg till", "search": "Sök", "filter": "Filtrera", "sort": "Sortera", "yes": "Ja", "no": "Nej", "ok": "OK", "error": "Fel", "success": "Framgång", "loading": "Laddar...", "retry": "Försök igen"},
+  "item": {"name": "Artikelnamn", "quantity": "Antal", "expiration": "Utgångsdatum", "storage": "Förvaringsplats", "barcode": "Streckkod", "added": "Tillagd", "updated": "Uppdaterad", "deleteConfirm": "Är du säker på att du vill ta bort denna artikel?", "markedUsed": "Artikel markerad som använd", "fresh": "Färsk", "expiringSoon": "Går snart ut", "expired": "Utgången"},
+  "storage": {"fridge": "Kylskåp", "freezer": "Frys", "pantry": "Skafferi", "counter": "Diskbänk"},
+  "tabs": {"home": "Hem", "scan": "Skanna", "shopping": "Shopping", "stats": "Statistik", "profile": "Profil"},
+  "settings": {"title": "Inställningar", "language": "Språk", "notifications": "Aviseringar", "accessibility": "Tillgänglighet", "theme": "Tema", "account": "Konto", "about": "Om"}
+}

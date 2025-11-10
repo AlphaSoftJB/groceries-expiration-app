@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Market Son Kullanma Tarihi Takipçisi", "tagline": "Bir daha asla yiyecek israf etmeyin"},
+  "common": {"save": "Kaydet", "cancel": "İptal", "delete": "Sil", "edit": "Düzenle", "add": "Ekle", "search": "Ara", "filter": "Filtrele", "sort": "Sırala", "yes": "Evet", "no": "Hayır", "ok": "Tamam", "error": "Hata", "success": "Başarılı", "loading": "Yükleniyor...", "retry": "Tekrar dene"},
+  "item": {"name": "Ürün Adı", "quantity": "Miktar", "expiration": "Son Kullanma Tarihi", "storage": "Depolama Yeri", "barcode": "Barkod", "added": "Eklendi", "updated": "Güncellendi", "deleteConfirm": "Bu ürünü silmek istediğinizden emin misiniz?", "markedUsed": "Ürün başarıyla kullanıldı olarak işaretlendi", "fresh": "Taze", "expiringSoon": "Yakında Sona Eriyor", "expired": "Süresi Dolmuş"},
+  "storage": {"fridge": "Buzdolabı", "freezer": "Dondurucu", "pantry": "Kiler", "counter": "Tezgah"},
+  "tabs": {"home": "Ana Sayfa", "scan": "Tara", "shopping": "Alışveriş", "stats": "İstatistikler", "profile": "Profil"},
+  "settings": {"title": "Ayarlar", "language": "Dil", "notifications": "Bildirimler", "accessibility": "Erişilebilirlik", "theme": "Tema", "account": "Hesap", "about": "Hakkında"}
+}

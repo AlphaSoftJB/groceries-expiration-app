@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Dagligvarer Udløbsdato Tracker", "tagline": "Spild aldrig mad igen"},
+  "common": {"save": "Gem", "cancel": "Annuller", "delete": "Slet", "edit": "Rediger", "add": "Tilføj", "search": "Søg", "filter": "Filtrer", "sort": "Sorter", "yes": "Ja", "no": "Nej", "ok": "OK", "error": "Fejl", "success": "Succes", "loading": "Indlæser...", "retry": "Prøv igen"},
+  "item": {"name": "Varenavn", "quantity": "Antal", "expiration": "Udløbsdato", "storage": "Opbevaringssted", "barcode": "Stregkode", "added": "Tilføjet", "updated": "Opdateret", "deleteConfirm": "Er du sikker på, at du vil slette denne vare?", "markedUsed": "Vare markeret som brugt", "fresh": "Frisk", "expiringSoon": "Udløber snart", "expired": "Udløbet"},
+  "storage": {"fridge": "Køleskab", "freezer": "Fryser", "pantry": "Spisekammer", "counter": "Køkkenbord"},
+  "tabs": {"home": "Hjem", "scan": "Scan", "shopping": "Indkøb", "stats": "Statistik", "profile": "Profil"},
+  "settings": {"title": "Indstillinger", "language": "Sprog", "notifications": "Notifikationer", "accessibility": "Tilgængelighed", "theme": "Tema", "account": "Konto", "about": "Om"}
+}

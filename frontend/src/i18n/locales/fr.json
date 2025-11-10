@@ -1,0 +1,156 @@
+{
+  "app": {
+    "name": "Suivi d'Expiration des Produits Alimentaires",
+    "tagline": "Ne gaspillez plus jamais de nourriture"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "yes": "Oui",
+    "no": "Non",
+    "ok": "OK",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement...",
+    "retry": "Réessayer"
+  },
+  "item": {
+    "name": "Nom de l'Article",
+    "quantity": "Quantité",
+    "expiration": "Date d'Expiration",
+    "storage": "Lieu de Stockage",
+    "barcode": "Code-barres",
+    "added": "Ajouté",
+    "updated": "Mis à jour",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cet article?",
+    "markedUsed": "Article marqué comme utilisé avec succès",
+    "fresh": "Frais",
+    "expiringSoon": "Expire Bientôt",
+    "expired": "Expiré"
+  },
+  "storage": {
+    "fridge": "Réfrigérateur",
+    "freezer": "Congélateur",
+    "pantry": "Garde-manger",
+    "counter": "Comptoir"
+  },
+  "notification": {
+    "expiringTitle": "Articles Expirant Bientôt",
+    "expiringBody": "Vous avez {{count}} articles qui expirent dans les 3 prochains jours",
+    "expiredTitle": "Articles Expirés",
+    "expiredBody": "{{count}} articles ont expiré. Vérifiez votre inventaire!",
+    "achievementTitle": "Succès Débloqué!",
+    "achievementBody": "Vous avez gagné: {{name}}",
+    "levelUpTitle": "Niveau Supérieur!",
+    "levelUpBody": "Félicitations! Vous êtes maintenant niveau {{level}}"
+  },
+  "achievement": {
+    "wasteWarriorBronze": "Guerrier Anti-Gaspillage Bronze",
+    "wasteWarriorSilver": "Guerrier Anti-Gaspillage Argent",
+    "wasteWarriorGold": "Guerrier Anti-Gaspillage Or",
+    "wasteWarriorPlatinum": "Guerrier Anti-Gaspillage Platine",
+    "ecoChampionBronze": "Champion Écologique Bronze",
+    "ecoChampionSilver": "Champion Écologique Argent",
+    "ecoChampionGold": "Champion Écologique Or",
+    "ecoChampionPlatinum": "Champion Écologique Platine",
+    "scanMasterBronze": "Maître du Scan Bronze",
+    "scanMasterSilver": "Maître du Scan Argent",
+    "scanMasterGold": "Maître du Scan Or",
+    "scanMasterPlatinum": "Maître du Scan Platine",
+    "streak7": "Série de 7 Jours",
+    "streak30": "Série de 30 Jours",
+    "streak100": "Série de 100 Jours"
+  },
+  "gamification": {
+    "level": "Niveau",
+    "xp": "XP",
+    "points": "Points",
+    "streak": "Série de Jours",
+    "leaderboard": "Classement",
+    "achievements": "Succès",
+    "rank": "Rang"
+  },
+  "sustainability": {
+    "co2Saved": "CO₂ Économisé",
+    "kg": "kg",
+    "impact": "Votre Impact",
+    "globalImpact": "Impact Global",
+    "itemsSaved": "Articles Sauvés du Gaspillage"
+  },
+  "shopping": {
+    "list": "Liste de Courses",
+    "suggestions": "Suggestions Intelligentes",
+    "addItem": "Ajouter à la Liste de Courses",
+    "itemPurchased": "Marquer comme Acheté",
+    "clearPurchased": "Effacer les Articles Achetés"
+  },
+  "barcode": {
+    "scan": "Scanner le Code-barres",
+    "scanning": "Scan en cours...",
+    "found": "Produit Trouvé",
+    "notFound": "Produit non trouvé dans la base de données",
+    "manualEntry": "Entrer le code-barres manuellement"
+  },
+  "ocr": {
+    "scanReceipt": "Scanner le Reçu",
+    "scanLabel": "Scanner l'Étiquette",
+    "processing": "Traitement de l'image...",
+    "success": "Texte extrait avec succès",
+    "failed": "Échec de l'extraction du texte"
+  },
+  "ar": {
+    "fridgeView": "Vue AR du Réfrigérateur",
+    "enableCamera": "Activer la caméra pour AR",
+    "pointAtFridge": "Pointez la caméra vers votre réfrigérateur"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "notifications": "Notifications",
+    "accessibility": "Accessibilité",
+    "theme": "Thème",
+    "account": "Compte",
+    "about": "À propos"
+  },
+  "error": {
+    "network": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "server": "Erreur serveur. Veuillez réessayer plus tard.",
+    "invalidInput": "Entrée invalide. Veuillez vérifier vos données.",
+    "notFound": "Article non trouvé.",
+    "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
+    "generic": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "success": {
+    "itemAdded": "Article ajouté avec succès",
+    "itemUpdated": "Article mis à jour avec succès",
+    "itemDeleted": "Article supprimé avec succès",
+    "settingsSaved": "Paramètres enregistrés avec succès",
+    "notificationSent": "Notification envoyée avec succès"
+  },
+  "tabs": {
+    "home": "Accueil",
+    "scan": "Scanner",
+    "shopping": "Courses",
+    "stats": "Statistiques",
+    "profile": "Profil"
+  },
+  "home": {
+    "title": "Mes Produits Alimentaires",
+    "emptyState": "Aucun article pour le moment. Scannez ou ajoutez des articles pour commencer!",
+    "expiringToday": "Expirant Aujourd'hui",
+    "expiringThisWeek": "Expirant Cette Semaine"
+  },
+  "profile": {
+    "title": "Profil",
+    "stats": "Vos Statistiques",
+    "totalItems": "Articles Totaux",
+    "itemsSaved": "Articles Sauvés",
+    "co2Reduced": "CO₂ Réduit"
+  }
+}

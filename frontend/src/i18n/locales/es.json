@@ -1,0 +1,156 @@
+{
+  "app": {
+    "name": "Rastreador de Caducidad de Comestibles",
+    "tagline": "Nunca desperdicies comida otra vez"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Agregar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "OK",
+    "error": "Error",
+    "success": "Éxito",
+    "loading": "Cargando...",
+    "retry": "Reintentar"
+  },
+  "item": {
+    "name": "Nombre del Artículo",
+    "quantity": "Cantidad",
+    "expiration": "Fecha de Caducidad",
+    "storage": "Ubicación de Almacenamiento",
+    "barcode": "Código de Barras",
+    "added": "Agregado",
+    "updated": "Actualizado",
+    "deleteConfirm": "¿Estás seguro de que quieres eliminar este artículo?",
+    "markedUsed": "Artículo marcado como usado exitosamente",
+    "fresh": "Fresco",
+    "expiringSoon": "Caduca Pronto",
+    "expired": "Caducado"
+  },
+  "storage": {
+    "fridge": "Refrigerador",
+    "freezer": "Congelador",
+    "pantry": "Despensa",
+    "counter": "Mostrador"
+  },
+  "notification": {
+    "expiringTitle": "Artículos que Caducan Pronto",
+    "expiringBody": "Tienes {{count}} artículos que caducan en los próximos 3 días",
+    "expiredTitle": "Artículos Caducados",
+    "expiredBody": "{{count}} artículos han caducado. ¡Revisa tu inventario!",
+    "achievementTitle": "¡Logro Desbloqueado!",
+    "achievementBody": "Has ganado: {{name}}",
+    "levelUpTitle": "¡Subiste de Nivel!",
+    "levelUpBody": "¡Felicidades! Ahora eres nivel {{level}}"
+  },
+  "achievement": {
+    "wasteWarriorBronze": "Guerrero Anti-Desperdicio Bronce",
+    "wasteWarriorSilver": "Guerrero Anti-Desperdicio Plata",
+    "wasteWarriorGold": "Guerrero Anti-Desperdicio Oro",
+    "wasteWarriorPlatinum": "Guerrero Anti-Desperdicio Platino",
+    "ecoChampionBronze": "Campeón Ecológico Bronce",
+    "ecoChampionSilver": "Campeón Ecológico Plata",
+    "ecoChampionGold": "Campeón Ecológico Oro",
+    "ecoChampionPlatinum": "Campeón Ecológico Platino",
+    "scanMasterBronze": "Maestro del Escaneo Bronce",
+    "scanMasterSilver": "Maestro del Escaneo Plata",
+    "scanMasterGold": "Maestro del Escaneo Oro",
+    "scanMasterPlatinum": "Maestro del Escaneo Platino",
+    "streak7": "Racha de 7 Días",
+    "streak30": "Racha de 30 Días",
+    "streak100": "Racha de 100 Días"
+  },
+  "gamification": {
+    "level": "Nivel",
+    "xp": "XP",
+    "points": "Puntos",
+    "streak": "Racha de Días",
+    "leaderboard": "Tabla de Clasificación",
+    "achievements": "Logros",
+    "rank": "Rango"
+  },
+  "sustainability": {
+    "co2Saved": "CO₂ Ahorrado",
+    "kg": "kg",
+    "impact": "Tu Impacto",
+    "globalImpact": "Impacto Global",
+    "itemsSaved": "Artículos Salvados del Desperdicio"
+  },
+  "shopping": {
+    "list": "Lista de Compras",
+    "suggestions": "Sugerencias Inteligentes",
+    "addItem": "Agregar a la Lista de Compras",
+    "itemPurchased": "Marcar como Comprado",
+    "clearPurchased": "Limpiar Artículos Comprados"
+  },
+  "barcode": {
+    "scan": "Escanear Código de Barras",
+    "scanning": "Escaneando...",
+    "found": "Producto Encontrado",
+    "notFound": "Producto no encontrado en la base de datos",
+    "manualEntry": "Ingresar código de barras manualmente"
+  },
+  "ocr": {
+    "scanReceipt": "Escanear Recibo",
+    "scanLabel": "Escanear Etiqueta",
+    "processing": "Procesando imagen...",
+    "success": "Texto extraído exitosamente",
+    "failed": "Error al extraer texto"
+  },
+  "ar": {
+    "fridgeView": "Vista AR del Refrigerador",
+    "enableCamera": "Habilitar cámara para AR",
+    "pointAtFridge": "Apunta la cámara a tu refrigerador"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "notifications": "Notificaciones",
+    "accessibility": "Accesibilidad",
+    "theme": "Tema",
+    "account": "Cuenta",
+    "about": "Acerca de"
+  },
+  "error": {
+    "network": "Error de red. Por favor verifica tu conexión.",
+    "server": "Error del servidor. Por favor intenta más tarde.",
+    "invalidInput": "Entrada inválida. Por favor verifica tus datos.",
+    "notFound": "Artículo no encontrado.",
+    "unauthorized": "No estás autorizado para realizar esta acción.",
+    "generic": "Ocurrió un error. Por favor intenta de nuevo."
+  },
+  "success": {
+    "itemAdded": "Artículo agregado exitosamente",
+    "itemUpdated": "Artículo actualizado exitosamente",
+    "itemDeleted": "Artículo eliminado exitosamente",
+    "settingsSaved": "Configuración guardada exitosamente",
+    "notificationSent": "Notificación enviada exitosamente"
+  },
+  "tabs": {
+    "home": "Inicio",
+    "scan": "Escanear",
+    "shopping": "Compras",
+    "stats": "Estadísticas",
+    "profile": "Perfil"
+  },
+  "home": {
+    "title": "Mis Comestibles",
+    "emptyState": "No hay artículos aún. ¡Escanea o agrega artículos para comenzar!",
+    "expiringToday": "Caducan Hoy",
+    "expiringThisWeek": "Caducan Esta Semana"
+  },
+  "profile": {
+    "title": "Perfil",
+    "stats": "Tus Estadísticas",
+    "totalItems": "Artículos Totales",
+    "itemsSaved": "Artículos Salvados",
+    "co2Reduced": "CO₂ Reducido"
+  }
+}

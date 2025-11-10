@@ -1,0 +1,156 @@
+{
+  "app": {
+    "name": "Groceries Expiration Tracker",
+    "tagline": "Never waste food again"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "retry": "Retry"
+  },
+  "item": {
+    "name": "Item Name",
+    "quantity": "Quantity",
+    "expiration": "Expiration Date",
+    "storage": "Storage Location",
+    "barcode": "Barcode",
+    "added": "Added",
+    "updated": "Updated",
+    "deleteConfirm": "Are you sure you want to delete this item?",
+    "markedUsed": "Item marked as used successfully",
+    "fresh": "Fresh",
+    "expiringSoon": "Expiring Soon",
+    "expired": "Expired"
+  },
+  "storage": {
+    "fridge": "Fridge",
+    "freezer": "Freezer",
+    "pantry": "Pantry",
+    "counter": "Counter"
+  },
+  "notification": {
+    "expiringTitle": "Items Expiring Soon",
+    "expiringBody": "You have {{count}} items expiring in the next 3 days",
+    "expiredTitle": "Items Expired",
+    "expiredBody": "{{count}} items have expired. Check your inventory!",
+    "achievementTitle": "Achievement Unlocked!",
+    "achievementBody": "You've earned: {{name}}",
+    "levelUpTitle": "Level Up!",
+    "levelUpBody": "Congratulations! You're now level {{level}}"
+  },
+  "achievement": {
+    "wasteWarriorBronze": "Waste Warrior Bronze",
+    "wasteWarriorSilver": "Waste Warrior Silver",
+    "wasteWarriorGold": "Waste Warrior Gold",
+    "wasteWarriorPlatinum": "Waste Warrior Platinum",
+    "ecoChampionBronze": "Eco Champion Bronze",
+    "ecoChampionSilver": "Eco Champion Silver",
+    "ecoChampionGold": "Eco Champion Gold",
+    "ecoChampionPlatinum": "Eco Champion Platinum",
+    "scanMasterBronze": "Scan Master Bronze",
+    "scanMasterSilver": "Scan Master Silver",
+    "scanMasterGold": "Scan Master Gold",
+    "scanMasterPlatinum": "Scan Master Platinum",
+    "streak7": "7 Day Streak",
+    "streak30": "30 Day Streak",
+    "streak100": "100 Day Streak"
+  },
+  "gamification": {
+    "level": "Level",
+    "xp": "XP",
+    "points": "Points",
+    "streak": "Day Streak",
+    "leaderboard": "Leaderboard",
+    "achievements": "Achievements",
+    "rank": "Rank"
+  },
+  "sustainability": {
+    "co2Saved": "CO₂ Saved",
+    "kg": "kg",
+    "impact": "Your Impact",
+    "globalImpact": "Global Impact",
+    "itemsSaved": "Items Saved from Waste"
+  },
+  "shopping": {
+    "list": "Shopping List",
+    "suggestions": "Smart Suggestions",
+    "addItem": "Add to Shopping List",
+    "itemPurchased": "Mark as Purchased",
+    "clearPurchased": "Clear Purchased Items"
+  },
+  "barcode": {
+    "scan": "Scan Barcode",
+    "scanning": "Scanning...",
+    "found": "Product Found",
+    "notFound": "Product not found in database",
+    "manualEntry": "Enter barcode manually"
+  },
+  "ocr": {
+    "scanReceipt": "Scan Receipt",
+    "scanLabel": "Scan Label",
+    "processing": "Processing image...",
+    "success": "Text extracted successfully",
+    "failed": "Failed to extract text"
+  },
+  "ar": {
+    "fridgeView": "AR Fridge View",
+    "enableCamera": "Enable camera for AR",
+    "pointAtFridge": "Point camera at your fridge"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "accessibility": "Accessibility",
+    "theme": "Theme",
+    "account": "Account",
+    "about": "About"
+  },
+  "error": {
+    "network": "Network error. Please check your connection.",
+    "server": "Server error. Please try again later.",
+    "invalidInput": "Invalid input. Please check your data.",
+    "notFound": "Item not found.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "generic": "An error occurred. Please try again."
+  },
+  "success": {
+    "itemAdded": "Item added successfully",
+    "itemUpdated": "Item updated successfully",
+    "itemDeleted": "Item deleted successfully",
+    "settingsSaved": "Settings saved successfully",
+    "notificationSent": "Notification sent successfully"
+  },
+  "tabs": {
+    "home": "Home",
+    "scan": "Scan",
+    "shopping": "Shopping",
+    "stats": "Stats",
+    "profile": "Profile"
+  },
+  "home": {
+    "title": "My Groceries",
+    "emptyState": "No items yet. Scan or add items to get started!",
+    "expiringToday": "Expiring Today",
+    "expiringThisWeek": "Expiring This Week"
+  },
+  "profile": {
+    "title": "Profile",
+    "stats": "Your Stats",
+    "totalItems": "Total Items",
+    "itemsSaved": "Items Saved",
+    "co2Reduced": "CO₂ Reduced"
+  }
+}

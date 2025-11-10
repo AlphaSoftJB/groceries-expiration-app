@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Theo dõi Hạn sử dụng Thực phẩm", "tagline": "Không bao giờ lãng phí thức ăn nữa"},
+  "common": {"save": "Lưu", "cancel": "Hủy", "delete": "Xóa", "edit": "Chỉnh sửa", "add": "Thêm", "search": "Tìm kiếm", "filter": "Lọc", "sort": "Sắp xếp", "yes": "Có", "no": "Không", "ok": "OK", "error": "Lỗi", "success": "Thành công", "loading": "Đang tải...", "retry": "Thử lại"},
+  "item": {"name": "Tên sản phẩm", "quantity": "Số lượng", "expiration": "Hạn sử dụng", "storage": "Vị trí lưu trữ", "barcode": "Mã vạch", "added": "Đã thêm", "updated": "Đã cập nhật", "deleteConfirm": "Bạn có chắc chắn muốn xóa sản phẩm này?", "markedUsed": "Sản phẩm đã được đánh dấu là đã sử dụng", "fresh": "Tươi", "expiringSoon": "Sắp hết hạn", "expired": "Đã hết hạn"},
+  "storage": {"fridge": "Tủ lạnh", "freezer": "Tủ đông", "pantry": "Tủ đựng thức ăn", "counter": "Quầy"},
+  "tabs": {"home": "Trang chủ", "scan": "Quét", "shopping": "Mua sắm", "stats": "Thống kê", "profile": "Hồ sơ"},
+  "settings": {"title": "Cài đặt", "language": "Ngôn ngữ", "notifications": "Thông báo", "accessibility": "Khả năng truy cập", "theme": "Chủ đề", "account": "Tài khoản", "about": "Giới thiệu"}
+}

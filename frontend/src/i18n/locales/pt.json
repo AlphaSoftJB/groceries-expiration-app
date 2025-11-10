@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Rastreador de Validade de Alimentos", "tagline": "Nunca desperdice comida novamente"},
+  "common": {"save": "Salvar", "cancel": "Cancelar", "delete": "Excluir", "edit": "Editar", "add": "Adicionar", "search": "Pesquisar", "filter": "Filtrar", "sort": "Ordenar", "yes": "Sim", "no": "Não", "ok": "OK", "error": "Erro", "success": "Sucesso", "loading": "Carregando...", "retry": "Tentar novamente"},
+  "item": {"name": "Nome do Item", "quantity": "Quantidade", "expiration": "Data de Validade", "storage": "Local de Armazenamento", "barcode": "Código de Barras", "added": "Adicionado", "updated": "Atualizado", "deleteConfirm": "Tem certeza de que deseja excluir este item?", "markedUsed": "Item marcado como usado com sucesso", "fresh": "Fresco", "expiringSoon": "Vencendo em Breve", "expired": "Vencido"},
+  "storage": {"fridge": "Geladeira", "freezer": "Freezer", "pantry": "Despensa", "counter": "Balcão"},
+  "tabs": {"home": "Início", "scan": "Escanear", "shopping": "Compras", "stats": "Estatísticas", "profile": "Perfil"},
+  "settings": {"title": "Configurações", "language": "Idioma", "notifications": "Notificações", "accessibility": "Acessibilidade", "theme": "Tema", "account": "Conta", "about": "Sobre"}
+}

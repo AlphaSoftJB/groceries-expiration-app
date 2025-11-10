@@ -1,0 +1,8 @@
+{
+  "app": {"name": "متتبع انتهاء صلاحية البقالة", "tagline": "لا تهدر الطعام مرة أخرى"},
+  "common": {"save": "حفظ", "cancel": "إلغاء", "delete": "حذف", "edit": "تعديل", "add": "إضافة", "search": "بحث", "filter": "تصفية", "sort": "ترتيب", "yes": "نعم", "no": "لا", "ok": "موافق", "error": "خطأ", "success": "نجاح", "loading": "جاري التحميل...", "retry": "إعادة المحاولة"},
+  "item": {"name": "اسم العنصر", "quantity": "الكمية", "expiration": "تاريخ الانتهاء", "storage": "موقع التخزين", "barcode": "الباركود", "added": "تمت الإضافة", "updated": "تم التحديث", "deleteConfirm": "هل أنت متأكد من حذف هذا العنصر؟", "markedUsed": "تم وضع علامة على العنصر كمستخدم بنجاح", "fresh": "طازج", "expiringSoon": "ينتهي قريباً", "expired": "منتهي الصلاحية"},
+  "storage": {"fridge": "الثلاجة", "freezer": "الفريزر", "pantry": "المخزن", "counter": "الطاولة"},
+  "tabs": {"home": "الرئيسية", "scan": "مسح", "shopping": "التسوق", "stats": "الإحصائيات", "profile": "الملف الشخصي"},
+  "settings": {"title": "الإعدادات", "language": "اللغة", "notifications": "الإشعارات", "accessibility": "إمكانية الوصول", "theme": "المظهر", "account": "الحساب", "about": "حول"}
+}

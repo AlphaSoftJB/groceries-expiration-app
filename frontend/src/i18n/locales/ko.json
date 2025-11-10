@@ -1,0 +1,8 @@
+{
+  "app": {"name": "식품 유통기한 추적기", "tagline": "다시는 음식을 낭비하지 마세요"},
+  "common": {"save": "저장", "cancel": "취소", "delete": "삭제", "edit": "편집", "add": "추가", "search": "검색", "filter": "필터", "sort": "정렬", "yes": "예", "no": "아니오", "ok": "확인", "error": "오류", "success": "성공", "loading": "로딩 중...", "retry": "다시 시도"},
+  "item": {"name": "품목 이름", "quantity": "수량", "expiration": "유통기한", "storage": "보관 위치", "barcode": "바코드", "added": "추가됨", "updated": "업데이트됨", "deleteConfirm": "이 품목을 삭제하시겠습니까?", "markedUsed": "품목이 사용됨으로 표시되었습니다", "fresh": "신선함", "expiringSoon": "곧 만료", "expired": "만료됨"},
+  "storage": {"fridge": "냉장고", "freezer": "냉동고", "pantry": "식료품 저장실", "counter": "조리대"},
+  "tabs": {"home": "홈", "scan": "스캔", "shopping": "쇼핑", "stats": "통계", "profile": "프로필"},
+  "settings": {"title": "설정", "language": "언어", "notifications": "알림", "accessibility": "접근성", "theme": "테마", "account": "계정", "about": "정보"}
+}

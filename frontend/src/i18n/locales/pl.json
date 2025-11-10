@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Tracker Ważności Produktów", "tagline": "Nigdy więcej nie marnuj jedzenia"},
+  "common": {"save": "Zapisz", "cancel": "Anuluj", "delete": "Usuń", "edit": "Edytuj", "add": "Dodaj", "search": "Szukaj", "filter": "Filtruj", "sort": "Sortuj", "yes": "Tak", "no": "Nie", "ok": "OK", "error": "Błąd", "success": "Sukces", "loading": "Ładowanie...", "retry": "Spróbuj ponownie"},
+  "item": {"name": "Nazwa produktu", "quantity": "Ilość", "expiration": "Data ważności", "storage": "Miejsce przechowywania", "barcode": "Kod kreskowy", "added": "Dodano", "updated": "Zaktualizowano", "deleteConfirm": "Czy na pewno chcesz usunąć ten produkt?", "markedUsed": "Produkt został oznaczony jako użyty", "fresh": "Świeży", "expiringSoon": "Wkrótce wygasa", "expired": "Przeterminowany"},
+  "storage": {"fridge": "Lodówka", "freezer": "Zamrażarka", "pantry": "Spiżarnia", "counter": "Blat"},
+  "tabs": {"home": "Strona główna", "scan": "Skanuj", "shopping": "Zakupy", "stats": "Statystyki", "profile": "Profil"},
+  "settings": {"title": "Ustawienia", "language": "Język", "notifications": "Powiadomienia", "accessibility": "Dostępność", "theme": "Motyw", "account": "Konto", "about": "O aplikacji"}
+}

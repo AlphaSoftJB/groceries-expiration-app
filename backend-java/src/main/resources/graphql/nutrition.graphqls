@@ -1,0 +1,426 @@
+# Nutrition & Allergen Tracking GraphQL Schema
+
+# ============================================================================
+# ENUMS
+# ============================================================================
+
+enum AllergenType {
+    MILK
+    EGGS
+    FISH
+    SHELLFISH
+    TREE_NUTS
+    PEANUTS
+    WHEAT
+    SOYBEANS
+    SESAME
+    GLUTEN
+    CORN
+    SOY
+    CUSTOM
+    DIETARY_RESTRICTION
+}
+
+enum Severity {
+    MILD
+    MODERATE
+    SEVERE
+    LIFE_THREATENING
+}
+
+enum MealType {
+    BREAKFAST
+    LUNCH
+    DINNER
+    SNACK
+    OTHER
+}
+
+enum AlertStatus {
+    PENDING
+    ACKNOWLEDGED
+    IGNORED
+    ITEM_REMOVED
+}
+
+enum UserAction {
+    PROCEEDED
+    CANCELLED
+    REMOVED_ITEM
+}
+
+# ============================================================================
+# TYPES
+# ============================================================================
+
+type NutritionInfo {
+    id: ID!
+    item: Item!
+    
+    # Serving Information
+    servingSize: String
+    servingUnit: String
+    servingsPerContainer: Float
+    
+    # Calories
+    calories: Int
+    caloriesFromFat: Int
+    
+    # Macronutrients (in grams)
+    totalFat: Float
+    saturatedFat: Float
+    transFat: Float
+    polyunsaturatedFat: Float
+    monounsaturatedFat: Float
+    cholesterol: Float
+    sodium: Float
+    totalCarbohydrates: Float
+    dietaryFiber: Float
+    totalSugars: Float
+    addedSugars: Float
+    sugarAlcohols: Float
+    protein: Float
+    
+    # Vitamins (in mg or mcg)
+    vitaminA: Float
+    vitaminC: Float
+    vitaminD: Float
+    vitaminE: Float
+    vitaminK: Float
+    vitaminB6: Float
+    vitaminB12: Float
+    
+    # Minerals (in mg or mcg)
+    calcium: Float
+    iron: Float
+    potassium: Float
+    magnesium: Float
+    zinc: Float
+    
+    createdAt: String!
+    updatedAt: String!
+}
+
+type Ingredient {
+    id: ID!
+    name: String!
+    description: String
+    
+    # Allergen flags
+    isAllergen: Boolean!
+    allergenType: AllergenType
+    
+    # Dietary flags
+    isVegan: Boolean!
+    isVegetarian: Boolean!
+    isGlutenFree: Boolean!
+    isDairyFree: Boolean!
+    isNutFree: Boolean!
+    
+    # Aliases (JSON array as string)
+    aliases: String
+    
+    createdAt: String!
+    updatedAt: String!
+}
+
+type ItemIngredient {
+    id: ID!
+    item: Item!
+    ingredient: Ingredient!
+    position: Int
+    percentage: Float
+    createdAt: String!
+}
+
+type UserAllergen {
+    id: ID!
+    user: User!
+    allergenType: AllergenType!
+    customAllergenName: String
+    severity: Severity!
+    notes: String
+    createdAt: String!
+    updatedAt: String!
+}
+
+type UserDietaryPreferences {
+    id: ID!
+    user: User!
+    
+    # Dietary restrictions
+    isVegan: Boolean!
+    isVegetarian: Boolean!
+    isGlutenFree: Boolean!
+    isDairyFree: Boolean!
+    isNutFree: Boolean!
+    isKosher: Boolean!
+    isHalal: Boolean!
+    isLowCarb: Boolean!
+    isKeto: Boolean!
+    isPaleo: Boolean!
+    
+    # Nutritional goals (daily targets)
+    dailyCalorieGoal: Int
+    dailyProteinGoal: Float
+    dailyCarbGoal: Float
+    dailyFatGoal: Float
+    dailyFiberGoal: Float
+    dailySugarLimit: Float
+    dailySodiumLimit: Float
+    
+    # Preferences (JSON arrays as strings)
+    avoidIngredients: String
+    preferredIngredients: String
+    
+    createdAt: String!
+    updatedAt: String!
+}
+
+type AllergenAlert {
+    id: ID!
+    user: User!
+    item: Item!
+    allergenType: AllergenType!
+    allergenName: String
+    severity: Severity
+    status: AlertStatus!
+    userAction: UserAction
+    userActionAt: String
+    createdAt: String!
+}
+
+type ConsumptionLog {
+    id: ID!
+    user: User!
+    item: Item!
+    consumedAt: String!
+    servingsConsumed: Float!
+    
+    # Nutritional totals
+    totalCalories: Int
+    totalProtein: Float
+    totalCarbs: Float
+    totalFat: Float
+    totalFiber: Float
+    totalSugar: Float
+    totalSodium: Float
+    
+    mealType: MealType
+    notes: String
+    createdAt: String!
+}
+
+type DailyNutritionSummary {
+    id: ID!
+    user: User!
+    date: String!
+    
+    # Daily totals
+    totalCalories: Int!
+    totalProtein: Float!
+    totalCarbs: Float!
+    totalFat: Float!
+    totalFiber: Float!
+    totalSugar: Float!
+    totalSodium: Float!
+    
+    # Meal breakdown
+    breakfastCalories: Int!
+    lunchCalories: Int!
+    dinnerCalories: Int!
+    snackCalories: Int!
+    
+    # Goals met
+    calorieGoalMet: Boolean!
+    proteinGoalMet: Boolean!
+    carbGoalMet: Boolean!
+    fatGoalMet: Boolean!
+    
+    createdAt: String!
+    updatedAt: String!
+}
+
+type NutritionInsights {
+    avgCalories: Float!
+    avgProtein: Float!
+    avgCarbs: Float!
+    avgFat: Float!
+    goalAchievementRate: Float
+    totalDays: Int!
+}
+
+type NutritionScanResult {
+    nutritionInfo: NutritionInfo
+    ingredients: [Ingredient!]!
+    allergenAlerts: [AllergenAlert!]!
+    dietaryViolations: [String!]!
+    success: Boolean!
+    message: String
+}
+
+type DietaryViolation {
+    restriction: String!
+    violated: Boolean!
+    violatingIngredients: [Ingredient!]!
+}
+
+# ============================================================================
+# INPUTS
+# ============================================================================
+
+input UserAllergenInput {
+    allergenType: AllergenType!
+    customAllergenName: String
+    severity: Severity!
+    notes: String
+}
+
+input DietaryPreferencesInput {
+    # Dietary restrictions
+    isVegan: Boolean
+    isVegetarian: Boolean
+    isGlutenFree: Boolean
+    isDairyFree: Boolean
+    isNutFree: Boolean
+    isKosher: Boolean
+    isHalal: Boolean
+    isLowCarb: Boolean
+    isKeto: Boolean
+    isPaleo: Boolean
+    
+    # Nutritional goals
+    dailyCalorieGoal: Int
+    dailyProteinGoal: Float
+    dailyCarbGoal: Float
+    dailyFatGoal: Float
+    dailyFiberGoal: Float
+    dailySugarLimit: Float
+    dailySodiumLimit: Float
+    
+    # Preferences
+    avoidIngredients: String
+    preferredIngredients: String
+}
+
+input ConsumptionInput {
+    itemId: ID!
+    servingsConsumed: Float!
+    mealType: MealType!
+    notes: String
+}
+
+input NutritionInfoInput {
+    itemId: ID!
+    servingSize: String
+    servingUnit: String
+    servingsPerContainer: Float
+    calories: Int
+    caloriesFromFat: Int
+    totalFat: Float
+    saturatedFat: Float
+    transFat: Float
+    cholesterol: Float
+    sodium: Float
+    totalCarbohydrates: Float
+    dietaryFiber: Float
+    totalSugars: Float
+    addedSugars: Float
+    protein: Float
+    vitaminD: Float
+    calcium: Float
+    iron: Float
+    potassium: Float
+}
+
+# ============================================================================
+# QUERIES
+# ============================================================================
+
+extend type Query {
+    # Nutrition Info
+    getItemNutrition(itemId: ID!): NutritionInfo
+    getNutritionByUser: [NutritionInfo!]!
+    
+    # Ingredients
+    getItemIngredients(itemId: ID!): [ItemIngredient!]!
+    searchIngredients(query: String!): [Ingredient!]!
+    getAllergenIngredients: [Ingredient!]!
+    getIngredientById(id: ID!): Ingredient
+    
+    # User Allergens
+    getUserAllergens: [UserAllergen!]!
+    getSevereAllergens: [UserAllergen!]!
+    
+    # Dietary Preferences
+    getDietaryPreferences: UserDietaryPreferences
+    
+    # Allergen Alerts
+    getAllergenAlerts: [AllergenAlert!]!
+    getPendingAlerts: [AllergenAlert!]!
+    getSevereAlerts: [AllergenAlert!]!
+    getRecentAlerts: [AllergenAlert!]!
+    
+    # Consumption Logs
+    getConsumptionLogs: [ConsumptionLog!]!
+    getTodayConsumption: [ConsumptionLog!]!
+    getConsumptionByDate(date: String!): [ConsumptionLog!]!
+    getConsumptionByDateRange(startDate: String!, endDate: String!): [ConsumptionLog!]!
+    getRecentConsumption: [ConsumptionLog!]!
+    
+    # Daily Summaries
+    getDailySummary(date: String!): DailyNutritionSummary
+    getTodaySummary: DailyNutritionSummary
+    getCurrentWeekSummaries: [DailyNutritionSummary!]!
+    getCurrentMonthSummaries: [DailyNutritionSummary!]!
+    getSummariesByDateRange(startDate: String!, endDate: String!): [DailyNutritionSummary!]!
+    
+    # Insights
+    getNutritionInsights(startDate: String!, endDate: String!): NutritionInsights!
+    getWeeklyInsights: NutritionInsights!
+    getMonthlyInsights: NutritionInsights!
+}
+
+# ============================================================================
+# MUTATIONS
+# ============================================================================
+
+extend type Mutation {
+    # Nutrition Info
+    addNutritionInfo(input: NutritionInfoInput!): NutritionInfo!
+    updateNutritionInfo(id: ID!, input: NutritionInfoInput!): NutritionInfo!
+    deleteNutritionInfo(id: ID!): Boolean!
+    
+    # User Allergens
+    addUserAllergen(input: UserAllergenInput!): UserAllergen!
+    updateUserAllergen(id: ID!, input: UserAllergenInput!): UserAllergen!
+    removeUserAllergen(id: ID!): Boolean!
+    
+    # Dietary Preferences
+    updateDietaryPreferences(input: DietaryPreferencesInput!): UserDietaryPreferences!
+    
+    # Consumption Logs
+    logConsumption(input: ConsumptionInput!): ConsumptionLog!
+    deleteConsumptionLog(id: ID!): Boolean!
+    
+    # Allergen Alerts
+    acknowledgeAllergenAlert(alertId: ID!, action: UserAction!): AllergenAlert!
+    dismissAlert(alertId: ID!): Boolean!
+    
+    # Scanning
+    scanNutritionLabel(itemId: ID!, ocrText: String!): NutritionScanResult!
+    scanIngredients(itemId: ID!, ocrText: String!): [Ingredient!]!
+    
+    # Ingredients
+    addIngredient(name: String!, isAllergen: Boolean, allergenType: AllergenType): Ingredient!
+    updateIngredient(id: ID!, name: String, isAllergen: Boolean, allergenType: AllergenType): Ingredient!
+}
+
+# ============================================================================
+# SUBSCRIPTIONS (Optional - for real-time alerts)
+# ============================================================================
+
+extend type Subscription {
+    allergenAlertCreated: AllergenAlert!
+    dailySummaryUpdated: DailyNutritionSummary!
+}

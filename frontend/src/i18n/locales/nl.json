@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Boodschappen Vervaldatum Tracker", "tagline": "Verspil nooit meer voedsel"},
+  "common": {"save": "Opslaan", "cancel": "Annuleren", "delete": "Verwijderen", "edit": "Bewerken", "add": "Toevoegen", "search": "Zoeken", "filter": "Filteren", "sort": "Sorteren", "yes": "Ja", "no": "Nee", "ok": "OK", "error": "Fout", "success": "Succes", "loading": "Laden...", "retry": "Opnieuw proberen"},
+  "item": {"name": "Artikelnaam", "quantity": "Hoeveelheid", "expiration": "Vervaldatum", "storage": "Opslaglocatie", "barcode": "Barcode", "added": "Toegevoegd", "updated": "Bijgewerkt", "deleteConfirm": "Weet u zeker dat u dit artikel wilt verwijderen?", "markedUsed": "Artikel succesvol gemarkeerd als gebruikt", "fresh": "Vers", "expiringSoon": "Verloopt binnenkort", "expired": "Verlopen"},
+  "storage": {"fridge": "Koelkast", "freezer": "Vriezer", "pantry": "Voorraadkast", "counter": "Aanrecht"},
+  "tabs": {"home": "Home", "scan": "Scannen", "shopping": "Winkelen", "stats": "Statistieken", "profile": "Profiel"},
+  "settings": {"title": "Instellingen", "language": "Taal", "notifications": "Meldingen", "accessibility": "Toegankelijkheid", "theme": "Thema", "account": "Account", "about": "Over"}
+}

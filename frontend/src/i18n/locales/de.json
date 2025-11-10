@@ -1,0 +1,69 @@
+{
+  "app": {
+    "name": "Lebensmittel Ablauf-Tracker",
+    "tagline": "Verschwenden Sie nie wieder Lebensmittel"
+  },
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "yes": "Ja",
+    "no": "Nein",
+    "ok": "OK",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "loading": "Lädt...",
+    "retry": "Wiederholen"
+  },
+  "item": {
+    "name": "Artikelname",
+    "quantity": "Menge",
+    "expiration": "Ablaufdatum",
+    "storage": "Lagerort",
+    "barcode": "Barcode",
+    "added": "Hinzugefügt",
+    "updated": "Aktualisiert",
+    "deleteConfirm": "Möchten Sie diesen Artikel wirklich löschen?",
+    "markedUsed": "Artikel erfolgreich als verwendet markiert",
+    "fresh": "Frisch",
+    "expiringSoon": "Läuft bald ab",
+    "expired": "Abgelaufen"
+  },
+  "storage": {
+    "fridge": "Kühlschrank",
+    "freezer": "Gefrierschrank",
+    "pantry": "Speisekammer",
+    "counter": "Theke"
+  },
+  "notification": {
+    "expiringTitle": "Artikel laufen bald ab",
+    "expiringBody": "Sie haben {{count}} Artikel, die in den nächsten 3 Tagen ablaufen",
+    "expiredTitle": "Artikel abgelaufen",
+    "expiredBody": "{{count}} Artikel sind abgelaufen. Überprüfen Sie Ihr Inventar!",
+    "achievementTitle": "Erfolg freigeschaltet!",
+    "achievementBody": "Sie haben verdient: {{name}}",
+    "levelUpTitle": "Level aufgestiegen!",
+    "levelUpBody": "Glückwunsch! Sie sind jetzt Level {{level}}"
+  },
+  "tabs": {
+    "home": "Start",
+    "scan": "Scannen",
+    "shopping": "Einkaufen",
+    "stats": "Statistiken",
+    "profile": "Profil"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "notifications": "Benachrichtigungen",
+    "accessibility": "Barrierefreiheit",
+    "theme": "Thema",
+    "account": "Konto",
+    "about": "Über"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "app": {"name": "ติดตามวันหมดอายุของอาหาร", "tagline": "ไม่เสียอาหารอีกต่อไป"},
+  "common": {"save": "บันทึก", "cancel": "ยกเลิก", "delete": "ลบ", "edit": "แก้ไข", "add": "เพิ่ม", "search": "ค้นหา", "filter": "กรอง", "sort": "เรียง", "yes": "ใช่", "no": "ไม่", "ok": "ตกลง", "error": "ข้อผิดพลาด", "success": "สำเร็จ", "loading": "กำลังโหลด...", "retry": "ลองใหม่"},
+  "item": {"name": "ชื่อสินค้า", "quantity": "จำนวน", "expiration": "วันหมดอายุ", "storage": "สถานที่เก็บ", "barcode": "บาร์โค้ด", "added": "เพิ่มแล้ว", "updated": "อัปเดตแล้ว", "deleteConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบสินค้านี้?", "markedUsed": "ทำเครื่องหมายสินค้าว่าใช้แล้วเรียบร้อย", "fresh": "สด", "expiringSoon": "ใกล้หมดอายุ", "expired": "หมดอายุแล้ว"},
+  "storage": {"fridge": "ตู้เย็น", "freezer": "ตู้แช่แข็ง", "pantry": "ตู้เก็บอาหาร", "counter": "เคาน์เตอร์"},
+  "tabs": {"home": "หน้าแรก", "scan": "สแกน", "shopping": "ช้อปปิ้ง", "stats": "สถิติ", "profile": "โปรไฟล์"},
+  "settings": {"title": "การตั้งค่า", "language": "ภาษา", "notifications": "การแจ้งเตือน", "accessibility": "การเข้าถึง", "theme": "ธีม", "account": "บัญชี", "about": "เกี่ยวกับ"}
+}

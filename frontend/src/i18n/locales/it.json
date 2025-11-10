@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Tracker Scadenza Alimentari", "tagline": "Non sprecare mai più cibo"},
+  "common": {"save": "Salva", "cancel": "Annulla", "delete": "Elimina", "edit": "Modifica", "add": "Aggiungi", "search": "Cerca", "filter": "Filtra", "sort": "Ordina", "yes": "Sì", "no": "No", "ok": "OK", "error": "Errore", "success": "Successo", "loading": "Caricamento...", "retry": "Riprova"},
+  "item": {"name": "Nome Articolo", "quantity": "Quantità", "expiration": "Data di Scadenza", "storage": "Posizione di Archiviazione", "barcode": "Codice a Barre", "added": "Aggiunto", "updated": "Aggiornato", "deleteConfirm": "Sei sicuro di voler eliminare questo articolo?", "markedUsed": "Articolo contrassegnato come usato con successo", "fresh": "Fresco", "expiringSoon": "In Scadenza", "expired": "Scaduto"},
+  "storage": {"fridge": "Frigorifero", "freezer": "Congelatore", "pantry": "Dispensa", "counter": "Bancone"},
+  "tabs": {"home": "Home", "scan": "Scansiona", "shopping": "Spesa", "stats": "Statistiche", "profile": "Profilo"},
+  "settings": {"title": "Impostazioni", "language": "Lingua", "notifications": "Notifiche", "accessibility": "Accessibilità", "theme": "Tema", "account": "Account", "about": "Info"}
+}

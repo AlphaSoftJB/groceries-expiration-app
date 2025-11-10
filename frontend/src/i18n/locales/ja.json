@@ -1,0 +1,8 @@
+{
+  "app": {"name": "食品期限追跡アプリ", "tagline": "食品を無駄にしない"},
+  "common": {"save": "保存", "cancel": "キャンセル", "delete": "削除", "edit": "編集", "add": "追加", "search": "検索", "filter": "フィルター", "sort": "並べ替え", "yes": "はい", "no": "いいえ", "ok": "OK", "error": "エラー", "success": "成功", "loading": "読み込み中...", "retry": "再試行"},
+  "item": {"name": "商品名", "quantity": "数量", "expiration": "賞味期限", "storage": "保管場所", "barcode": "バーコード", "added": "追加済み", "updated": "更新済み", "deleteConfirm": "この商品を削除してもよろしいですか？", "markedUsed": "商品を使用済みとしてマークしました", "fresh": "新鮮", "expiringSoon": "まもなく期限切れ", "expired": "期限切れ"},
+  "storage": {"fridge": "冷蔵庫", "freezer": "冷凍庫", "pantry": "パントリー", "counter": "カウンター"},
+  "tabs": {"home": "ホーム", "scan": "スキャン", "shopping": "買い物", "stats": "統計", "profile": "プロフィール"},
+  "settings": {"title": "設定", "language": "言語", "notifications": "通知", "accessibility": "アクセシビリティ", "theme": "テーマ", "account": "アカウント", "about": "について"}
+}

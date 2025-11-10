@@ -1,0 +1,8 @@
+{
+  "app": {"name": "Pelacak Kedaluwarsa Bahan Makanan", "tagline": "Jangan buang makanan lagi"},
+  "common": {"save": "Simpan", "cancel": "Batal", "delete": "Hapus", "edit": "Edit", "add": "Tambah", "search": "Cari", "filter": "Filter", "sort": "Urutkan", "yes": "Ya", "no": "Tidak", "ok": "OK", "error": "Kesalahan", "success": "Berhasil", "loading": "Memuat...", "retry": "Coba lagi"},
+  "item": {"name": "Nama Barang", "quantity": "Jumlah", "expiration": "Tanggal Kedaluwarsa", "storage": "Lokasi Penyimpanan", "barcode": "Barcode", "added": "Ditambahkan", "updated": "Diperbarui", "deleteConfirm": "Apakah Anda yakin ingin menghapus barang ini?", "markedUsed": "Barang berhasil ditandai sebagai digunakan", "fresh": "Segar", "expiringSoon": "Segera Kedaluwarsa", "expired": "Kedaluwarsa"},
+  "storage": {"fridge": "Kulkas", "freezer": "Freezer", "pantry": "Pantry", "counter": "Meja"},
+  "tabs": {"home": "Beranda", "scan": "Pindai", "shopping": "Belanja", "stats": "Statistik", "profile": "Profil"},
+  "settings": {"title": "Pengaturan", "language": "Bahasa", "notifications": "Notifikasi", "accessibility": "Aksesibilitas", "theme": "Tema", "account": "Akun", "about": "Tentang"}
+}

@@ -1,0 +1,72 @@
+# Java / Maven
+backend-java/target/
+backend-java/*.jar
+backend-java/*.war
+backend-java/*.ear
+backend-java/.mvn/
+backend-java/mvnw
+backend-java/mvnw.cmd
+*.class
+*.log
+
+# React Native
+frontend/node_modules/
+frontend/.expo/
+frontend/.expo-shared/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.DS_Store
+
+# iOS
+frontend/ios/Pods/
+frontend/ios/build/
+frontend/ios/*.xcworkspace
+frontend/ios/*.xcuserdata
+
+# Android
+frontend/android/build/
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+server.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Firebase credentials (if used)
+firebase-admin-sdk.json
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Database
+*.db
+*.sqlite
+
+# Docker
+.dockerignore

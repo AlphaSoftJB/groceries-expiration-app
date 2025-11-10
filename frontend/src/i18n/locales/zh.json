@@ -1,0 +1,69 @@
+{
+  "app": {
+    "name": "食品保质期追踪器",
+    "tagline": "再也不浪费食物"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "error": "错误",
+    "success": "成功",
+    "loading": "加载中...",
+    "retry": "重试"
+  },
+  "item": {
+    "name": "物品名称",
+    "quantity": "数量",
+    "expiration": "保质期",
+    "storage": "存储位置",
+    "barcode": "条形码",
+    "added": "已添加",
+    "updated": "已更新",
+    "deleteConfirm": "确定要删除此物品吗？",
+    "markedUsed": "物品已成功标记为已使用",
+    "fresh": "新鲜",
+    "expiringSoon": "即将过期",
+    "expired": "已过期"
+  },
+  "storage": {
+    "fridge": "冰箱",
+    "freezer": "冷冻室",
+    "pantry": "储藏室",
+    "counter": "台面"
+  },
+  "notification": {
+    "expiringTitle": "物品即将过期",
+    "expiringBody": "您有 {{count}} 件物品将在未来3天内过期",
+    "expiredTitle": "物品已过期",
+    "expiredBody": "{{count}} 件物品已过期。请检查您的库存！",
+    "achievementTitle": "成就解锁！",
+    "achievementBody": "您获得了：{{name}}",
+    "levelUpTitle": "升级！",
+    "levelUpBody": "恭喜！您现在是 {{level}} 级"
+  },
+  "tabs": {
+    "home": "首页",
+    "scan": "扫描",
+    "shopping": "购物",
+    "stats": "统计",
+    "profile": "个人"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "notifications": "通知",
+    "accessibility": "无障碍",
+    "theme": "主题",
+    "account": "账户",
+    "about": "关于"
+  }
+}
