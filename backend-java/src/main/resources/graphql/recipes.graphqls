@@ -1,0 +1,121 @@
+type Recipe {
+    id: ID!
+    name: String!
+    description: String
+    prepTimeMinutes: Int
+    cookTimeMinutes: Int
+    servings: Int
+    difficultyLevel: DifficultyLevel
+    cuisineType: String
+    mealType: MealType
+    ingredients: [String!]!
+    instructions: [String!]!
+    caloriesPerServing: Int
+    proteinGrams: Float
+    carbsGrams: Float
+    fatGrams: Float
+    imageUrl: String
+    videoUrl: String
+    source: String
+    sourceUrl: String
+    createdByUserId: ID
+    isPublic: Boolean!
+    ratingAverage: Float!
+    ratingCount: Int!
+    viewCount: Int!
+    saveCount: Int!
+    tags: [String!]!
+    createdAt: String!
+    updatedAt: String!
+}
+
+type RecipeSuggestion {
+    recipe: Recipe!
+    score: Float!
+    matchedIngredients: [String!]!
+    missingIngredients: [String!]!
+    matchPercentage: Float!
+    urgentItemsUsed: Int!
+}
+
+enum DifficultyLevel {
+    EASY
+    MEDIUM
+    HARD
+}
+
+enum MealType {
+    BREAKFAST
+    LUNCH
+    DINNER
+    SNACK
+    DESSERT
+    BEVERAGE
+}
+
+input RecipeInput {
+    name: String!
+    description: String
+    prepTimeMinutes: Int
+    cookTimeMinutes: Int
+    servings: Int
+    difficultyLevel: DifficultyLevel
+    cuisineType: String
+    mealType: MealType
+    ingredients: [String!]!
+    instructions: [String!]!
+    caloriesPerServing: Int
+    proteinGrams: Float
+    carbsGrams: Float
+    fatGrams: Float
+    imageUrl: String
+    videoUrl: String
+    source: String
+    sourceUrl: String
+    createdByUserId: ID
+    isPublic: Boolean
+    tags: [String!]
+}
+
+extend type Query {
+    # Get all public recipes
+    getAllRecipes: [Recipe!]!
+    
+    # Get recipe by ID
+    getRecipeById(id: ID!): Recipe
+    
+    # Search recipes by name or description
+    searchRecipes(query: String!): [Recipe!]!
+    
+    # Get recipes by meal type
+    getRecipesByMealType(mealType: MealType!): [Recipe!]!
+    
+    # Get top rated recipes
+    getTopRatedRecipes: [Recipe!]!
+    
+    # Get quick recipes (under 30 minutes)
+    getQuickRecipes: [Recipe!]!
+    
+    # Get recipe suggestions based on expiring items
+    suggestRecipesForExpiringItems(householdId: ID!, daysAhead: Int): [RecipeSuggestion!]!
+    
+    # Get recipes by user
+    getRecipesByUser(userId: ID!): [Recipe!]!
+}
+
+extend type Mutation {
+    # Create new recipe
+    createRecipe(input: RecipeInput!): Recipe!
+    
+    # Update recipe
+    updateRecipe(id: ID!, input: RecipeInput!): Recipe!
+    
+    # Delete recipe
+    deleteRecipe(id: ID!): Boolean!
+    
+    # Rate recipe (1-5 stars)
+    rateRecipe(recipeId: ID!, rating: Float!): Recipe!
+    
+    # Increment view count
+    viewRecipe(recipeId: ID!): Recipe!
+}

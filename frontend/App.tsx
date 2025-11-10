@@ -19,6 +19,8 @@ import AllergenManagementScreen from './src/screens/AllergenManagementScreen';
 import ConsumptionLogScreen from './src/screens/ConsumptionLogScreen';
 import DietaryPreferencesScreen from './src/screens/DietaryPreferencesScreen';
 import AllergenAlertsScreen from './src/screens/AllergenAlertsScreen';
+import RecipeSuggestionsScreen from './src/screens/RecipeSuggestionsScreen';
+import RecipeDetailScreen from './src/screens/RecipeDetailScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
 import { Text, View, StyleSheet } from 'react-native';
 
@@ -45,6 +47,8 @@ const AppContent = () => {
           <Stack.Screen name="ConsumptionLog" component={ConsumptionLogScreen} options={{ title: 'Log Meal' }} />
           <Stack.Screen name="DietaryPreferences" component={DietaryPreferencesScreen} options={{ title: 'Dietary Preferences' }} />
           <Stack.Screen name="AllergenAlerts" component={AllergenAlertsScreen} options={{ title: 'Allergen Alerts' }} />
+          <Stack.Screen name="RecipeSuggestions" component={RecipeSuggestionsScreen} options={{ title: 'Recipe Suggestions' }} />
+          <Stack.Screen name="RecipeDetail" component={RecipeDetailScreen} options={{ title: 'Recipe Details' }} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

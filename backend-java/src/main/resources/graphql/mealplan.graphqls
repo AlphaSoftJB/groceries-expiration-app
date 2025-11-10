@@ -1,0 +1,83 @@
+type MealPlan {
+    id: ID!
+    userId: ID!
+    householdId: ID
+    recipeId: ID
+    recipe: Recipe
+    plannedDate: String!
+    mealType: MealPlanMealType!
+    servings: Int
+    notes: String
+    isCompleted: Boolean!
+    completedAt: String
+    createdAt: String!
+    updatedAt: String!
+}
+
+type WeeklyMealPlan {
+    startDate: String!
+    endDate: String!
+    mealPlans: [MealPlan!]!
+    totalCalories: Int!
+    totalProtein: Float!
+    totalCarbs: Float!
+    totalFat: Float!
+    avgDailyCalories: Int!
+    avgDailyProtein: Float!
+    avgDailyCarbs: Float!
+    avgDailyFat: Float!
+}
+
+enum MealPlanMealType {
+    BREAKFAST
+    LUNCH
+    DINNER
+    SNACK
+}
+
+input MealPlanInput {
+    userId: ID!
+    householdId: ID
+    recipeId: ID
+    plannedDate: String!
+    mealType: MealPlanMealType!
+    servings: Int
+    notes: String
+}
+
+extend type Query {
+    # Get meal plans by user
+    getMealPlansByUser(userId: ID!): [MealPlan!]!
+    
+    # Get meal plans for specific date
+    getMealPlansForDate(userId: ID!, date: String!): [MealPlan!]!
+    
+    # Get meal plans for date range
+    getMealPlansForDateRange(userId: ID!, startDate: String!, endDate: String!): [MealPlan!]!
+    
+    # Get weekly meal plan (current week)
+    getWeeklyMealPlan(userId: ID!): WeeklyMealPlan!
+    
+    # Get weekly meal plan for specific week
+    getWeeklyMealPlanForWeek(userId: ID!, weekStart: String!): WeeklyMealPlan!
+    
+    # Get upcoming meal plans
+    getUpcomingMealPlans(userId: ID!): [MealPlan!]!
+}
+
+extend type Mutation {
+    # Create meal plan
+    createMealPlan(input: MealPlanInput!): MealPlan!
+    
+    # Update meal plan
+    updateMealPlan(id: ID!, input: MealPlanInput!): MealPlan!
+    
+    # Mark meal plan as completed
+    completeMealPlan(id: ID!): MealPlan!
+    
+    # Delete meal plan
+    deleteMealPlan(id: ID!): Boolean!
+    
+    # Auto-generate weekly meal plan
+    generateWeeklyMealPlan(userId: ID!, householdId: ID!): [MealPlan!]!
+}

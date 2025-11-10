@@ -39,7 +39,9 @@ type RootStackParamList = {
   AllergenManagement: undefined;
   ConsumptionLog: undefined;
   DietaryPreferences: undefined;
-  AllergenAlerts: undefined
+  AllergenAlerts: undefined;
+  RecipeSuggestions: { householdId: string };
+  RecipeDetail: { recipeId: string };
 };
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
@@ -99,6 +101,11 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       <Button
         title="Shopping List"
         onPress={() => navigation.navigate('ShoppingList')}
+      />
+      <Button
+        title="🍳 Recipe Suggestions"
+        onPress={() => navigation.navigate('RecipeSuggestions', { householdId: HOUSEHOLD_ID })}
+        color="#FF9800"
       />
       <Button
         title="⚠️ Allergen Alerts"
